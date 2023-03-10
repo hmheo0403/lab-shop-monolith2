@@ -1,9 +1,10 @@
 package labshopmonolith.domain;
 
-import java.util.*;
 import labshopmonolith.domain.*;
 import labshopmonolith.infra.AbstractEvent;
+import java.util.*;
 import lombok.*;
+
 
 @Data
 @ToString
@@ -14,13 +15,10 @@ public class OrderPlaced extends AbstractEvent {
     private Integer qty;
     private String customerId;
 
-    public OrderPlaced(Order aggregate) {
+    public OrderPlaced(Order aggregate){
         super(aggregate);
     }
-
-    public OrderPlaced() {
+    public OrderPlaced(){
         super();
     }
-    // keep
-
 }
