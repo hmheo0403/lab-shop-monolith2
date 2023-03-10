@@ -41,7 +41,7 @@ public class Inventory  {
 
 
 
-    public void decreaseStock(){
+    public void decreaseStock(DecreaseStockCommand decreaseStockCommand){
     }
 
 

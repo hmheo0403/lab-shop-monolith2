@@ -55,6 +55,10 @@ public class Order  {
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
+        labshopmonolith.external.DecreaseStockCommand decreaseStockCommand = new labshopmonolith.external.DecreaseStockCommand();
+        // mappings goes here
+        MonolithApplication.applicationContext.getBean(labshopmonolith.external.InventoryService.class)
+            .decreaseStock(/* get???(), */ decreaseStockCommand);
 
 
 
